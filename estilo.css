@@ -1,0 +1,12 @@
+body {
+  background-image: url(../WEB/imagenes/Gemini_Generated_Image_k754t9k754t9k754.jpg); 
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover; 
+  background-attachment: fixed; 
+  margin: 0; 
+}
+h1{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
