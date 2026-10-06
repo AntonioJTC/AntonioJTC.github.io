@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-/* Configuración del cuerpo de la página */
+/* Configuracion del cuerpo de la pagina */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -40,7 +40,7 @@ body {
     font-size: 16px;
 }
 
-/* Estilo del menú de navegación */
+/* Estilo del meu de navegacion */
 .menu {
     list-style: none;
     margin-top: 20px;
@@ -62,13 +62,13 @@ body {
     font-weight: bold;
 }
 
-/* Efecto al pasar el ratón por los botones */
+/* Efecto al pasar el raton por los botones */
 .menu a:hover {
     background-color: #d10000;
     color: #ffffff;
 }
 
-/* Contenedor principal de la página */
+/* Contenedor principal de la pagina */
 main {
     max-width: 900px;
     margin: 30px auto;
@@ -93,7 +93,7 @@ main {
 }
 
 .tarjeta h3 {
-    color: #d10000; /* Subtítulos en rojo */
+    color: #d10000; /* Subtitulos en rojo */
     font-size: 18px;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -109,7 +109,7 @@ strong {
     color: #ffffff;
 }
 
-/* Pie de página */
+/* Pie de pagina */
 footer {
     text-align: center;
     padding: 20px;
