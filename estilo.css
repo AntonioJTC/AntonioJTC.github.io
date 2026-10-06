@@ -1,12 +1,120 @@
-body {
-  background-image: url(../WEB/imagenes/Gemini_Generated_Image_k754t9k754t9k754.jpg); 
-  background-repeat: no-repeat;
-  background-position: center; 
-  background-size: cover; 
-  background-attachment: fixed; 
-  margin: 0; 
+/* =====================================================
+   HONDAPULSE - Hoja de Estilos CSS
+   ===================================================== */
+
+/* Reset básico para ajustar márgenes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-h1{
-  color: rgb(255, 255, 255);
-  text-align: center;
+
+/* Configuración del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #0f0f0f;
+    /* Fondo con imagen oscurecida mediante un gradiente negro */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.cabecera {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #141414;
+    border-bottom: 3px solid #d10000; /* Borde rojo Honda */
+}
+
+.cabecera h1 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.cabecera p {
+    color: #cccccc;
+    font-size: 16px;
+}
+
+/* Estilo del menú de navegación */
+.menu {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.menu li {
+    display: inline-block; /* Coloca los botones uno al lado del otro */
+    margin: 5px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #222222;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #d10000;
+    font-weight: bold;
+}
+
+/* Efecto al pasar el ratón por los botones */
+.menu a:hover {
+    background-color: #d10000;
+    color: #ffffff;
+}
+
+/* Contenedor principal de la página */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* Estilo de las tarjetas de contenido (<section>) */
+.tarjeta {
+    background-color: rgba(20, 20, 20, 0.9);
+    border-left: 5px solid #d10000; /* Línea fija roja a la izquierda */
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.tarjeta h2 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 5px;
+}
+
+.tarjeta h3 {
+    color: #d10000; /* Subtítulos en rojo */
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.tarjeta p {
+    color: #dddddd;
+    font-size: 15px;
+}
+
+/* Palabras clave destacadas dentro del texto */
+strong {
+    color: #ffffff;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #141414;
+    border-top: 1px solid #d10000;
+    font-size: 14px;
+    color: #888888;
 }
