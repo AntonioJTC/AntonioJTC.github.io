@@ -1,0 +1,251 @@
+/* Estilo del contenedor principal de la sección de enlaces */
+/* =====================================================
+   HONDAPULSE - Hoja de Estilos CSS
+   ===================================================== */
+
+/* Reset básico para ajustar márgenes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuracion del cuerpo de la pagina */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #0f0f0f;
+    /* Fondo con imagen oscurecida mediante un gradiente negro */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("imagenes/pngtree-close-up-image-of-a-black-machine-with-metal-parts-image_2656666.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.cabecera {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #141414;
+    border-bottom: 3px solid #d10000; /* Borde rojo Honda */
+}
+
+.cabecera h1 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.cabecera p {
+    color: #cccccc;
+    font-size: 16px;
+}
+
+/* Estilo del meu de navegacion */
+.menu {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.menu li {
+    display: inline-block; /* Coloca los botones uno al lado del otro */
+    margin: 5px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #222222;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #d10000;
+    font-weight: bold;
+}
+
+/* Efecto al pasar el raton por los botones */
+.menu a:hover {
+    background-color: #d10000;
+    color: #ffffff;
+}
+
+/* Contenedor principal de la pagina */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* Estilo de las tarjetas de contenido (<section>) */
+.tarjeta {
+    background-color: rgba(20, 20, 20, 0.9);
+    border-left: 5px solid #d10000; /* Línea fija roja a la izquierda */
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.tarjeta h2 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 5px;
+}
+
+.tarjeta h3 {
+    color: #d10000; /* Subtitulos en rojo */
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.tarjeta p {
+    color: #dddddd;
+    font-size: 15px;
+}
+
+/* Palabras clave destacadas dentro del texto */
+strong {
+    color: #ffffff;
+}
+
+/* Pie de pagina */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #141414;
+    border-top: 1px solid #d10000;
+    font-size: 14px;
+    color: #888888;
+}
+main section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Estilo para cada tarjeta (article) */
+main section article {
+  background-color: rgba(20, 20, 20, 0.85); /* Fondo oscuro semi-transparente */
+  border: 1px solid #333;
+  border-left: 4px solid #e60000; /* Borde rojo característico de Honda */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+/* Efecto al pasar el ratón (Hover) sobre cada tarjeta */
+main section article:hover {
+  transform: translateY(-5px);
+  border-color: #e60000;
+  box-shadow: 0 8px 20px rgba(230, 0, 0, 0.3);
+}
+
+/* Título de la persona (h1) */
+main section article h1 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+/* Subtítulo de la temática (h2) */
+main section article h2 {
+  font-size: 1rem;
+  color: #e60000; /* Rojo deportivo */
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* Párrafo y botón de enlace */
+main section article p {
+  margin: 0;
+}
+
+main section article a {
+  display: inline-block;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid #e60000;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main section article a:hover {
+  background-color: #e60000;
+  color: #ffffff;
+}
+main section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Estilo para cada tarjeta (article) */
+main section article {
+  background-color: rgba(20, 20, 20, 0.85); /* Fondo oscuro semi-transparente */
+  border: 1px solid #333;
+  border-left: 4px solid #e60000; /* Borde rojo característico de Honda */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+/* Efecto al pasar el ratón (Hover) sobre cada tarjeta */
+main section article:hover {
+  transform: translateY(-5px);
+  border-color: #e60000;
+  box-shadow: 0 8px 20px rgba(230, 0, 0, 0.3);
+}
+
+/* Título de la persona (h1) */
+main section article h1 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+/* Subtítulo de la temática (h2) */
+main section article h2 {
+  font-size: 1rem;
+  color: #e60000; /* Rojo deportivo */
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* Párrafo y botón de enlace */
+main section article p {
+  margin: 0;
+}
+
+main section article a {
+  display: inline-block;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid #e60000;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main section article a:hover {
+  background-color: #e60000;
+  color: #ffffff;
+}

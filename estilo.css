@@ -16,7 +16,7 @@ body {
     color: #ffffff;
     background-color: #0f0f0f;
     /* Fondo con imagen oscurecida mediante un gradiente negro */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/fondo.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("imagenes/pngtree-close-up-image-of-a-black-machine-with-metal-parts-image_2656666.webp");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
