@@ -1,15 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-       <loc>https://antoniojtc.github.io/</loc>
-       <lastmod>2026-10-21T08:39:20+00:00</lastmod>
-       <priority>1.0000</priority>
-  </url>
-  <url>
-       <loc>https://antoniojtc.github.io/enlaces.html</loc>
-       <lastmod>2026-10-21T08:39:20+00:00</lastmod>
-       <priority>0.8000</priority>
-  </url>
+    <url>
+        <loc>https://antoniojtc.github.io/</loc>
+    </url>
+
+    <url>
+        <loc>https://antoniojtc.github.io/modelos/cbr650r.html</loc>
+    </url>
+
+    <url>
+        <loc>https://antoniojtc.github.io/modelos/civic-type-r.html</loc>
+    </url>
+
+    <url>
+        <loc>https://antoniojtc.github.io/modelos/civic-type-r/motor.html</loc>
+    </url>
+
+    <url>
+        <loc>https://antoniojtc.github.io/modelos/civic-type-r/chasis.html</loc>
+    </url>
+
+    <url>
+        <loc>https://antoniojtc.github.io/tecnologias/vtec.html</loc>
+    </url>
+
+    <url>
+        <loc>https://antoniojtc.github.io/tecnologias/e-clutch.html</loc>
+    </url>
+
+    <url>
+        <loc>https://antoniojtc.github.io/enlaces.html</loc>
+    </url>
+
+    <url>
+        <loc>https://antoniojtc.github.io/contacto.html</loc>
+    </url>
+
 </urlset>
