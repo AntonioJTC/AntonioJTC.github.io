@@ -30,8 +30,6 @@ body {
     background-color: var(--fondo);
 }
 
-/* Texto y enlaces */
-
 h1,
 h2,
 h3 {
@@ -68,11 +66,6 @@ video {
     max-width: 100%;
     height: auto;
 }
-
-/* Cabecera */
-
-
-
 main {
     width: min(1100px, 100%);
     margin: 32px auto;
@@ -83,8 +76,6 @@ main.portada {
     width: min(1200px, 100%);
     margin: 24px auto 60px;
 }
-
-/* Fotografía de apertura */
 
 .hero {
     position: relative;
@@ -181,7 +172,6 @@ main.portada {
     gap: 24px;
 }
 
-/* Tarjetas de modelos */
 
 .modelo {
     min-width: 0;
@@ -231,8 +221,6 @@ main.portada {
 .modelo > a:focus-visible {
     outline-offset: -5px;
 }
-
-/* Accesos a tecnologías */
 
 .tecnologia-enlace {
     display: block;
@@ -285,8 +273,6 @@ main.portada {
     color: var(--secundario);
 }
 
-/* Pie y enlaces sociales */
-
 footer {
     padding: 28px 20px;
     color: var(--secundario);
@@ -328,8 +314,6 @@ footer {
     object-fit: contain;
     flex-shrink: 0;
 }
-
-/* Pantallas pequeñas */
 
 @media (max-width: 650px) {
     .cabecera {
@@ -378,11 +362,6 @@ footer {
         padding: 22px;
     }
 }
-/* =====================================
-   PÁGINAS INTERIORES
-   ===================================== */
-
-/* Migas de pan */
 .migas {
     margin-bottom: 24px;
 }
@@ -407,7 +386,6 @@ footer {
     color: var(--texto);
 }
 
-/* Fotografía del modelo */
 .foto-modelo {
     margin-bottom: 30px;
     overflow: hidden;
@@ -427,7 +405,6 @@ footer {
     font-size: 0.85rem;
 }
 
-/* Tabla técnica */
 .tabla-contenedor {
     overflow-x: auto;
     margin-bottom: 16px;
@@ -498,7 +475,7 @@ footer a:hover {
         font-size: 0.9rem;
     }
 }
-/* Listas de conceptos */
+
 .conceptos dt {
     margin-top: 20px;
     margin-bottom: 6px;
@@ -514,7 +491,7 @@ footer a:hover {
     margin-left: 0;
     color: var(--secundario);
 }
-/* Listas de pasos */
+
 .pasos {
     padding-left: 24px;
     color: var(--secundario);
@@ -528,13 +505,13 @@ footer a:hover {
     color: var(--texto);
 }
 
-/* Abreviaturas con explicación */
+
 abbr[title] {
     text-decoration: underline dotted;
     text-underline-offset: 4px;
 }
 
-/* Vídeos insertados */
+
 .video-contenedor {
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -551,9 +528,6 @@ abbr[title] {
     height: 100%;
     border: 0;
 }
-/* =====================================================
-   FORMULARIO DE CONTACTO
-   ===================================================== */
 
 .aviso-formulario {
     margin: 20px 0;
@@ -662,9 +636,6 @@ abbr[title] {
     transform: none;
     box-shadow: none;
 }
-/* =========================================
-   ENCABEZADO HONDAPULSE
-   ========================================= */
 
 .cabecera {
     display: block;
@@ -675,8 +646,6 @@ abbr[title] {
     border-top: 4px solid #d10000;
     border-bottom: 1px solid #383838;
 }
-
-/* Nombre de la web */
 
 .cabecera h1 {
     margin: 0;
@@ -693,8 +662,6 @@ abbr[title] {
     color: #ffffff;
 }
 
-/* Pequeña línea roja bajo el nombre */
-
 .cabecera h1::after {
     content: "";
     display: block;
@@ -705,8 +672,6 @@ abbr[title] {
 
     background-color: #d10000;
 }
-
-/* Frase de presentación */
 
 .cabecera p {
     margin: 0;
@@ -720,8 +685,6 @@ abbr[title] {
     letter-spacing: 0.16em;
     text-transform: uppercase;
 }
-
-/* Franja de navegación */
 
 .cabecera > nav {
     display: block;
@@ -752,8 +715,6 @@ abbr[title] {
     padding: 0;
 }
 
-/* Enlaces del menú */
-
 .cabecera .menu a {
     position: relative;
     display: block;
@@ -777,8 +738,6 @@ abbr[title] {
     transition: color 180ms ease;
 }
 
-/* Indicador rojo bajo cada enlace */
-
 .cabecera .menu a::after {
     content: "";
     position: absolute;
@@ -794,8 +753,6 @@ abbr[title] {
     transform-origin: center;
     transition: transform 180ms ease;
 }
-
-/* Página actual, ratón y teclado */
 
 .cabecera .menu a:hover,
 .cabecera .menu a:focus-visible,
@@ -814,9 +771,6 @@ abbr[title] {
     outline: 2px solid #ffffff;
     outline-offset: -5px;
 }
-
-/* Adaptación a pantallas pequeñas */
-
 @media (max-width: 600px) {
     .cabecera {
         padding: 26px 14px 0;
@@ -847,11 +801,53 @@ abbr[title] {
     }
 }
 
-/* Respeta la preferencia de movimiento reducido */
-
 @media (prefers-reduced-motion: reduce) {
     .cabecera .menu a,
     .cabecera .menu a::after {
         transition: none;
     }
+}
+/* Tarjetas de los compañeros */
+.compa {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 200px;
+    margin: 8px;
+    padding: 20px;
+
+    background-color: #19191f;
+    border: 1px solid #555555;
+    border-radius: 6px;
+
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+/* Ajusta el fondo solamente en la página de compañeros */
+body:has(#companeros) {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Fondo de Fórmula 1 */
+body:has(#samuel:hover) {
+    background-image: url(imagenes/f1backround.webp);
+}
+
+/* Fondo de Cyberpunk */
+body:has(#ivan:hover) {
+    background-image: url(imagenes/Ciudadnochebackground.webp);
+}
+
+/* Fondo de Japón */
+body:has(#diego:hover) {
+    background-image: url(imagenes/Japonbackground.webp);
+}
+
+/* Fondo del FC Ceuta */
+body:has(#aaron:hover) {
+    background-image: url(imagenes/cEUTABACKGROUND.webp);
 }
