@@ -315,53 +315,6 @@ footer {
     flex-shrink: 0;
 }
 
-@media (max-width: 650px) {
-    .cabecera {
-        padding: 20px 14px;
-    }
-
-    .menu {
-        gap: 8px;
-    }
-
-    .menu a {
-        padding: 9px 12px;
-        font-size: 0.9rem;
-    }
-
-    main,
-    main.portada {
-        padding: 0 14px;
-    }
-
-    .hero {
-        min-height: 460px;
-        padding: 30px 22px;
-    }
-
-    .hero::before {
-        background: rgba(0, 0, 0, 0.72);
-    }
-
-    .hero h2 {
-        letter-spacing: -1px;
-    }
-
-    .rejilla-modelos,
-    .rejilla-tecnologias {
-        grid-template-columns: 1fr;
-    }
-
-    .escaparate {
-        margin-top: 36px;
-    }
-
-    .modelo-contenido,
-    .tecnologia-enlace,
-    .tarjeta {
-        padding: 22px;
-    }
-}
 .migas {
     margin-bottom: 24px;
 }
@@ -466,14 +419,6 @@ footer a {
 
 footer a:hover {
     color: #ffffff;
-}
-
-@media (max-width: 650px) {
-    .tabla-datos th,
-    .tabla-datos td {
-        padding: 10px;
-        font-size: 0.9rem;
-    }
 }
 
 .conceptos dt {
@@ -771,43 +716,6 @@ abbr[title] {
     outline: 2px solid #ffffff;
     outline-offset: -5px;
 }
-@media (max-width: 600px) {
-    .cabecera {
-        padding: 26px 14px 0;
-    }
-
-    .cabecera p {
-        max-width: 290px;
-        margin: 0 auto;
-
-        font-size: 10px;
-        letter-spacing: 0.12em;
-    }
-
-    .cabecera > nav {
-        margin-top: 22px;
-    }
-
-    .cabecera .menu a {
-        padding: 14px 10px;
-
-        font-size: 11px;
-        letter-spacing: 0.03em;
-    }
-
-    .cabecera .menu a::after {
-        right: 10px;
-        left: 10px;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .cabecera .menu a,
-    .cabecera .menu a::after {
-        transition: none;
-    }
-}
-/* Tarjetas de los compañeros */
 .compa {
     display: inline-block;
     box-sizing: border-box;
@@ -824,30 +732,30 @@ abbr[title] {
     text-decoration: none;
     vertical-align: top;
 }
-
-/* Ajusta el fondo solamente en la página de compañeros */
 body:has(#companeros) {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-/* Fondo de Fórmula 1 */
 body:has(#samuel:hover) {
     background-image: url(imagenes/f1backround.webp);
 }
 
-/* Fondo de Cyberpunk */
 body:has(#ivan:hover) {
     background-image: url(imagenes/Ciudadnochebackground.webp);
 }
 
-/* Fondo de Japón */
 body:has(#diego:hover) {
     background-image: url(imagenes/Japonbackground.webp);
 }
 
-/* Fondo del FC Ceuta */
 body:has(#aaron:hover) {
     background-image: url(imagenes/cEUTABACKGROUND.webp);
+}
+
+body:has(#companeros .compa:hover) .cabecera,
+body:has(#companeros .compa:hover) footer {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
 }
